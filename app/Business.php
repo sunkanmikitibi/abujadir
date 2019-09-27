@@ -10,4 +10,9 @@ class Business extends Model
     {
         return $this->belongsTo('App\Category');
     }
+
+    public function locations()
+    {
+        return $this->belongsTo('App\Location');
+    }
 }
